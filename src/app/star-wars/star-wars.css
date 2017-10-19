@@ -1,0 +1,9 @@
+p {
+  margin: 10px 0 0 20px; }
+
+ngb-accordion {
+  margin: 10px auto; }
+  ngb-accordion /deep/ .card {
+    margin: 20px 0 !important; }
+
+/*# sourceMappingURL=star-wars.css.map */

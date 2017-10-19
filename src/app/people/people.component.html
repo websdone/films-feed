@@ -1,0 +1,27 @@
+<h3> People </h3>
+<div *ngIf="loading == true" class="loader">Loading..</div>
+<div *ngIf="loading == false">
+  <div class="row" class="row col-md-10">
+    <div *ngFor="let individuals of (people | async)?.results" class="col-md-3">
+      <button class="btn btn-lg btn-outline-primary" (click)="open(content)">{{ individuals.name }}</button>
+
+      <ng-template #content let-c="close" let-d="dismiss">
+        <div class="modal-header">
+          <h4 class="modal-title">{{ individuals.name }}</h4>
+          <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div><b>Gender:</b> {{ individuals.gender }}</div>
+          <div><b>Height:</b> {{ individuals.height }} cm</div>
+          <div><b>Hair Color:</b> {{ individuals.hair_color }}</div>
+          <div><b>Eye Color: </b>{{ individuals.eye_color }}</div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-dark" (click)="c('Close click')">Close</button>
+        </div>
+      </ng-template>
+    </div>
+  </div>
+</div>
