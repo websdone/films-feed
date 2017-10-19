@@ -9,6 +9,7 @@ import 'rxjs/Rx';
   styleUrls: ['./star-wars.scss']
 })
 export class StarWarsComponent implements OnInit {
+  title: string = "Start Wars movies"
   loading: boolean;
   films: Observable<any>;
 

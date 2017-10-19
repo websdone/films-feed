@@ -10,6 +10,7 @@ import {NgbModal, ModalDismissReasons} from '@ng-bootstrap/ng-bootstrap';
   styleUrls: ['./people.component.scss']
 })
 export class peopleComponent implements OnInit {
+  title: string = "Start Wars actors"
   loading: boolean;
   closeResult: string;
   @Input()
