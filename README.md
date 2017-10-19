@@ -8,5 +8,6 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 * Developed with Angular 4 
 * ng-bootstrap - Films has accordion and Actors has the modal
+* Http api connection to Swapi, The Star Wars API - https://swapi.co/
 * Firebase auth with Google sign up, sign you in but at the moment it doesn't do anything but show the Log out button
 *  To be continued...
